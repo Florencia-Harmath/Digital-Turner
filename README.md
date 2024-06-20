@@ -26,18 +26,14 @@ Este proyecto es un turnero digital, creado con ExpressJS, TypeORM, PostgreSQL p
   - Registrarse en la aplicación.
   - Ver la información de la página e ingresar a la sección de contactos.
 
-<<<<<<< HEAD
 ![Registro de Usuario](/Digital-Turner/fotosreadme/inicio.png)
 ![Registro de Usuario](/Digital-Turner/fotosreadme/registro.png)
 
-=======
->>>>>>> 5bba0cd126327cd3553dc84df375630085080d90
 - **Usuarios Registrados (users)**
   - Loguearse.
   - Acceder a su información personal - perfil.
   - Solicitar y cancelar turnos.
 
-<<<<<<< HEAD
   ![Registro de Usuario](/Digital-Turner/fotosreadme/inisiarsesion.png)
   ![Registro de Usuario](/Digital-Turner/fotosreadme/perfil.png)
   ![Registro de Usuario](/Digital-Turner/fotosreadme/turno.png)
@@ -48,8 +44,6 @@ Este proyecto es un turnero digital, creado con ExpressJS, TypeORM, PostgreSQL p
 
 ![Registro de Usuario](/Digital-Turner/fotosreadme/admin.png)
 
-=======
->>>>>>> 5bba0cd126327cd3553dc84df375630085080d90
 ## Requerimientos
 
 - Node.js (v14 o superior)
@@ -91,8 +85,4 @@ Para mantener el código organizado y modular, se ha utilizado un esquema de sca
 - Añadir nuevas funcionalidades o entidades sin complicar la estructura del proyecto.
 - Identificar y solucionar problemas más fácilmente.
 
-<<<<<<< HEAD
 En el lado del frontend, se utilizó Vite para un despliegue más rápido y eficiente de la aplicación.
-=======
-En el lado del frontend, se utilizó Vite para un despliegue más rápido y eficiente de la aplicación.
->>>>>>> 5bba0cd126327cd3553dc84df375630085080d90
