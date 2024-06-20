@@ -36,7 +36,7 @@ const UserProfile = () => {
     fetchUserAppointments();
   }, [user]);
 
-  if (!user) { // Cambiado para verificar `user` directamente
+  if (!user) { 
     return (
       <div className={styles.contenedor1}>
         <p className={styles.p}>No hay un usuario logueado</p>

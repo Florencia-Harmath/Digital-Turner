@@ -26,10 +26,23 @@ Este proyecto es un turnero digital, creado con ExpressJS, TypeORM, PostgreSQL p
   - Registrarse en la aplicación.
   - Ver la información de la página e ingresar a la sección de contactos.
 
+![Registro de Usuario](/Digital-Turner/fotosreadme/inicio.png)
+![Registro de Usuario](/Digital-Turner/fotosreadme/registro.png)
+
 - **Usuarios Registrados (users)**
   - Loguearse.
   - Acceder a su información personal - perfil.
   - Solicitar y cancelar turnos.
+
+  ![Registro de Usuario](/Digital-Turner/fotosreadme/inisiarsesion.png)
+  ![Registro de Usuario](/Digital-Turner/fotosreadme/perfil.png)
+  ![Registro de Usuario](/Digital-Turner/fotosreadme/turno.png)
+  ![Registro de Usuario](/Digital-Turner/fotosreadme/turnocancelado.png)
+
+- **Usuarios Admin**
+- Ver la lista de todos los usuarios con sus turnos.
+
+![Registro de Usuario](/Digital-Turner/fotosreadme/admin.png)
 
 ## Requerimientos
 
