@@ -1,8 +1,15 @@
-const AboutUsView = () => {
-    return (
-        <>
-        <h1>ABOUT US</h1></>
-    )
-}
+import About from "../../components/about/about";
+import styles from "./AboutUsView.module.css";
 
-export default AboutUsView;
+const AboutUs = () => {
+  return (
+    <>
+      <div className={styles.container}>
+        <p className={styles.p}>Queremos que nos conozcas! Por eso, en esta sección te contamos un poco sobre nosotros!</p>
+      </div>
+      <About />
+    </>
+  );
+};
+
+export default AboutUs;

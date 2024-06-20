@@ -1,0 +1,60 @@
+.container {
+    display: flex;
+    flex-direction: row; 
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    background-color: rgb(241, 199, 206);
+    word-spacing: 10px;
+    width: 80%;
+    margin: auto;
+    padding: 5px;
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .containerWords {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .nameService {
+    font-weight: bolder;
+    font-size: 1rem;
+    text-align: center; 
+  }
+  
+  .green {
+    color: green;
+  }
+  
+  .red {
+    color: red;
+  }
+  
+  .cancelButton {
+    background-color: rgba(242, 238, 238, 0.609);
+    color: black;
+    border: 1px solid black;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .cancelButton:hover {
+    background-color:black;
+    color: white;
+  }
+  
+  .cancelButton:disabled {
+    background-color: rgb(228, 164, 164);
+    color: black;
+    cursor: not-allowed;
+  }

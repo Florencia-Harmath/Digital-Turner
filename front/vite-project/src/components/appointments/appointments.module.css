@@ -1,0 +1,96 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    margin-top: 50px;
+    margin-left: 150px;
+    margin-bottom: 100px;
+    gap: 20px;
+    padding: 20px;
+    width: 30%;
+    background-color: rgb(218, 168, 218);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .divContenedor {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 10px;
+  }
+  
+  .divContenedor label {
+    font-size: 1rem;
+    font-weight: bolder;
+  }
+  
+  .divContenedor input {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid rgb(1, 21, 21);
+    font-size: 0.8rem;
+    font-weight: bolder;
+    cursor: pointer;
+    background-color: rgb(228, 184, 228);
+
+  }
+  
+  .selectTime {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid rgb(1, 21, 21);
+    font-size: 0.8rem;
+    font-weight: bolder;
+    cursor: pointer;
+    background-color: rgb(228, 184, 228);
+
+  }
+  
+  .selectService {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid rgb(1, 21, 21);
+    font-size: 0.8rem;
+    font-weight: bolder;
+    cursor: pointer;
+    background-color: rgb(228, 184, 228);
+
+  }
+  
+  .button {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid rgb(1, 21, 21);
+    font-size: 0.7rem;
+    font-weight: bolder;
+    cursor: pointer;
+    width: 40%;
+    margin-left: 110px;
+    background-color: rgb(228, 184, 228);
+
+  }
+  
+  .button:hover {
+    background-color: rgb(1, 21, 21);
+    color: white;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .imgAppointment {
+    width: 20%;
+    margin-right: 300px;
+    margin-top: 50px;
+    height: 200px;
+  }
+  
+  .error {
+    font-size: 0.8rem;
+    color: red;
+  }
+  

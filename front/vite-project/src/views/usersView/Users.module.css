@@ -1,0 +1,12 @@
+.container {
+  margin-bottom: 150px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.titulo {
+  font-size: 1.8rem;
+  margin-left: 100px;
+  margin-bottom: 20px;
+}

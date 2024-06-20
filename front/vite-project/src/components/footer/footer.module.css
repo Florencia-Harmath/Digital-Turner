@@ -1,0 +1,31 @@
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  background-color: rgb(194, 111, 194);
+  box-shadow: 10px 10px 10px 10px rgb(0 0 0);
+  padding: 1em;
+  height: 70px;
+  margin-top: 20px;
+  bottom: 0;
+  position: fixed;
+}
+
+.contenedor {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+
+  & p {
+    font-weight: bold;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+    text-align: center;
+  }
+
+  & img {
+    cursor: pointer;
+  }
+}

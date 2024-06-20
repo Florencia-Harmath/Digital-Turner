@@ -1,0 +1,32 @@
+.contenedor {
+    margin-bottom: 100px;
+}
+
+.titulo {
+    font-size: 1rem;
+    margin-left: 70px;
+    margin-bottom: 20px;
+}
+
+.link {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-color: rgb(218, 168, 218);
+    text-decoration: none;
+    color: black;
+    display: block;
+    font-size: .9rem;
+    width: 11%;
+    padding: 1em;
+    margin-left: 70px;
+    border-radius: 5px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    font-weight: bold;
+    text-align: center;
+
+    &:hover {
+        color: rgb(241, 199, 206);
+        background-color: black;
+    }
+}
+

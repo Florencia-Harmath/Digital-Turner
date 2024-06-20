@@ -1,0 +1,23 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    border: solid, 1px, black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 1em;
+    width: 65%;
+    height: auto;
+    text-align: left;
+    margin-left: 200px;
+}
+
+.appointmentsList{
+    margin-top: 10px;
+    margin-left: 20px;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}

@@ -1,0 +1,62 @@
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 95%;
+  padding: 1em;
+  gap: 20px;
+  margin-bottom: 50px;
+}
+
+.titulo {
+  text-align: center;
+  text-shadow: 0 0 2px black;
+  font-size: 1.8rem;
+}
+
+.seccion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 1em;
+  border-radius: 5px;
+  width: 100%;
+
+  & p {
+    font-size: 1.5rem;
+    text-align: center;
+    letter-spacing: 0.7px;
+    width: 100%;
+    margin: 30px;
+  }
+
+  & img {
+    width: 40%;
+    margin: 30px;
+    border-radius: 30px;
+  }
+}
+
+.registrar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  margin-bottom: 50px;
+  margin-top: 10px;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+  font-weight: bolder;
+
+  &:hover {
+    color: magenta;
+  }
+}

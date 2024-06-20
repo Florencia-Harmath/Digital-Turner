@@ -11,20 +11,30 @@ const userSlice = createSlice({
     initialState,
     reducers: {
         setUser: (state, action) => {
-            state.userId = action.payload.user.id;
-            state.user = action.payload;
-            state.userAppointments= [];
-            console.log("Usuario en estado global: ", state.user)
+            const user = action.payload; // Asumimos que action.payload ya es el usuario
+            state.userId = user.id; // Asegúrate de que el ID esté directamente en user
+            state.user = user;
+            state.userAppointments = [];
+            console.log("Usuario en estado global: ", state.user);
         },
         setUserAppointments: (state, action) => {
             state.userAppointments = Array.isArray(action.payload) ? action.payload : [action.payload];
-            console.log("Turno en estado global: ", state.userAppointments)
+            console.log("Turno en estado global: ", state.userAppointments);
         },
-       cancelUserAppointment: (state, action) => {
+        cancelUserAppointments: (state, action) => {
             state.userAppointments = state.userAppointments.filter(appointment => appointment.id !== action.payload);
+        },
+        logout: (state) => {
+            state.userId = null;
+            state.user = null;
+            state.userAppointments = [];
         }
     }
 });
 
-export const { setUser, setUserAppointments, cancelUserAppointment } = userSlice.actions;
+export const { setUser, setUserAppointments, cancelUserAppointments, logout } = userSlice.actions;
+
+export const selectUser = state => state.user.user;
+export const selectUserRole = state => state.user.user ? state.user.user.role : 'guest';
+
 export default userSlice.reducer;
