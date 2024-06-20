@@ -5,19 +5,19 @@ import axios from "axios";
 import styles from "./profileView.module.css"; 
 
 const UserProfile = () => {
-  const user = useSelector((state) => state.user.user);
+  const user = useSelector((state) => state.user.user); 
   const [userAppointments, setUserAppointments] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
   useEffect(() => {
     const fetchUserAppointments = async () => {
-      if (user?.user?.id) {
+      if (user?.id) {
         try {
           setLoading(true);
           setError(null);
           const response = await axios.get(
-            `http://localhost:3000/users/${user.user.id}`
+            `http://localhost:3000/users/${user.id}`
           );
           console.log("Respuesta de la API:", response.data); 
           const { appointments } = response.data;
@@ -36,7 +36,7 @@ const UserProfile = () => {
     fetchUserAppointments();
   }, [user]);
 
-  if (!user?.user) {
+  if (!user) { // Cambiado para verificar `user` directamente
     return (
       <div className={styles.contenedor1}>
         <p className={styles.p}>No hay un usuario logueado</p>
@@ -62,25 +62,25 @@ const UserProfile = () => {
   return (
     <div className={styles.contenedor}>
       <h2>
-        <strong>Bienvenid@:</strong> {user.user.name} !!
+        <strong>Bienvenid@:</strong> {user.name} !!
       </h2>
       <h3>
         <strong>Información de tu usuario:</strong>
       </h3>
       <p>
-        <strong>Nombre: </strong> {user.user.name}
+        <strong>Nombre: </strong> {user.name}
       </p>
       <p>
-        <strong>Email:</strong> {user.user.email}
+        <strong>Email:</strong> {user.email}
       </p>
       <p>
-        <strong>Fecha de nacimiento:</strong> {user.birthdate}
+        <strong>Fecha de nacimiento:</strong> {formatDate(user.birthdate)}
       </p>
       <p>
-        <strong>DNI:</strong> {user.user.nDni}
+        <strong>DNI:</strong> {user.nDni}
       </p>
       <p>
-        <strong>Nombre de usuario: </strong> {user.user.username}
+        <strong>Nombre de usuario: </strong> {user.username}
       </p>
 
       {userAppointments.length > 0 ? (

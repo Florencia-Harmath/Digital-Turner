@@ -11,8 +11,8 @@ const userSlice = createSlice({
     initialState,
     reducers: {
         setUser: (state, action) => {
-            const user = action.payload; // Asumimos que action.payload ya es el usuario
-            state.userId = user.id; // Asegúrate de que el ID esté directamente en user
+            const user = action.payload;
+            state.userId = user.id;
             state.user = user;
             state.userAppointments = [];
             console.log("Usuario en estado global: ", state.user);
