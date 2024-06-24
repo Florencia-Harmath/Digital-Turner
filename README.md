@@ -36,7 +36,6 @@ Este proyecto es un turnero digital, creado con ExpressJS, TypeORM, PostgreSQL p
 
   ![Registro de Usuario](./fotosreadme/inisiarsesion.png)
   ![Registro de Usuario](./fotosreadme/perfil.png)
-  ![Registro de Usuario](./fotosreadme/turno.png)
   ![Registro de Usuario](./fotosreadme/turnocancelado.png)
 
 - **Usuarios Admin**
